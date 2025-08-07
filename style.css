@@ -1,0 +1,46 @@
+* {
+ margin: 0;    
+}
+
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #000;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 50px;
+}
+
+.logo {
+  height: 20px; 
+}
+/* La hauteur n'est pas définitive a controler sur la maquette */
+
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 10px 0;
+}
+
+/* le padding doit être recontrôlé*/
+
+nav li a:hover {
+  border-top: 2px solid #0065FC;
+  color: #0065FC;
+}
+
+
+
