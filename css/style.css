@@ -67,7 +67,12 @@ a {
 /************header*************/
 
 header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 281px;
     margin-top: 35px;
+    padding: 0px;
 }
 
 h1{
@@ -81,7 +86,7 @@ p{
 .header-search {
   width:377px;
   height: 49px;
-  margin-top: 35px;
+  /*margin-top: 35px;*/
   display: flex;
   align-items: center;
   background: var(--main-bg-color); /* fond gris clair pour l'input */
@@ -122,6 +127,7 @@ input::placeholder{
   color: white;
   border: 1 solid var(--main-color);
   border-radius: 0px 15px 15px 0px;
+  cursor:pointer;
 }
   /*********header-filter********/
 
@@ -130,7 +136,7 @@ input::placeholder{
     flex-direction: row;
     align-items: center;
    /* width: 758px;*/
-    margin-top: 15px;
+    /*margin-top: 15px;*/
     gap:15px;
 
   }
@@ -219,7 +225,7 @@ input::placeholder{
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 10px;
+   /* margin-top: 10px;*/
     height: 24px;
 }
 
@@ -258,12 +264,13 @@ input::placeholder{
 }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-and-populaires {
+.hebergements-populaires {
     display: flex;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
-.hebergements-and-populaires section {
+.hebergements-populaires section {
     background-color: var(--main-bg-color);
     border-radius: 20px;
     padding: 30px;
@@ -271,8 +278,80 @@ input::placeholder{
 }
 
 /****** Hebergements ***********/
-.hebergements {
+
+.hebergements-a-marseille {
     width: 65%;
+}
+
+.hebergements-a-marseille{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.hebergements-title {
+    /*display: flex;
+    justify-content: space-between;
+    align-items: center;*/
+}
+.hebergement-first-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hebergement-second-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-content{
+    background: white;
+   border-radius: 0px 20px 20px 0px;
+}
+.hebergement-marseille-container-card .card-marseille {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.card-marseille{    
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-marseille img {
+    width: 33%;
+    height: 207px;
+    border-radius: 20px;
+    background: white;
+}
+
+.hebergement-marseille-container-card .card-content {
+    width: 33%;
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergement-marseille-container-card .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergement-marseille-container-card .card-subtitle {
+    margin: 0;
+}
+
+.hebergement-marseille-container-card .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -286,19 +365,23 @@ input::placeholder{
     align-items: center;
 }
 
-.populaires-cards .card {
+.card-content{
+    background: white;
+   border-radius: 0px 20px 20px 0px;
+}
+.populaire-container-card .card-populaire {
     display: flex;
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.card-populaire img {
     width: 33%;
     height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
-.populaires-cards .card-content {
+.populaire-container-card .card-content {
     width: 67%;
     padding-left: 15px;
     display: flex;
@@ -307,24 +390,18 @@ input::placeholder{
     box-sizing: border-box;
 }
 
-.populaires-cards .card-title {
+.populaire-container-card .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
 }
 
-.populaires-cards .card-subtitle {
+.populaire-container-card .card-subtitle {
     margin: 0;
 }
 
-.populaires-cards .card-rating {
+.populaire-container-card .card-rating {
     margin-bottom: 5px;
 }
-
-
-
-
-
-
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
