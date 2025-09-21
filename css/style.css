@@ -257,7 +257,7 @@ label{
     background-color: white;
     border-radius: 20px;
     padding: 5px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
@@ -277,13 +277,13 @@ label{
 }
 
 /****** Hebergements And Populaires ***********/
-.hebergements-populaires {
+#hebergements-populaires {
     display: flex;
     padding: 30px;
     gap: 40px;
 }
 
-.hebergements-populaires section {
+#hebergements-populaires section {
 
     background-color: var(--main-bg-color);
     border-radius: 15px;
@@ -456,7 +456,7 @@ text-decoration: none;
     display: flex;
     border-radius: 20px;
     border: 5px solid white;
-    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
     
 }
 
@@ -493,7 +493,7 @@ text-decoration: none;
 /******** title activité ********/
 
 /******** container card activité *******/
-.activité-a-marseille-container{
+#activité-a-marseille-container{
     padding:0px 30px 0px 30px;
 }
 .activité-a-marseille{
@@ -519,7 +519,7 @@ text-decoration: none;
   background-color: white;
   text-decoration: none;
   border-radius: 15px;
-  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
 .card-activité-marseille img{
@@ -588,7 +588,7 @@ footer a {
     /*********** nav ********/
 
     /*********** header *********/
-    .header-filter{
+    .header-filter {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
