@@ -30,6 +30,12 @@ body {
 header{
     cursor: url ('../images/cursor/whitecursor.png');
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /*******nav-bar**********/
 nav {
     display: flex;
@@ -515,15 +521,15 @@ text-decoration: none;
 }
 
 .card-activité-marseille{
-  width: 25%;
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  text-decoration: none;
   border-radius: 15px;
   box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
 }
 
 .card-activité-marseille img{
-    width: 100%;
+    width: 297px;
     height: 380px;
     object-fit: cover;
     object-position: center;
@@ -534,6 +540,7 @@ text-decoration: none;
     font-size: 16px;
     padding: 20px 19px 20px 19px;
     gap: 10px;
+    border-radius: 0px 0px 15px 15px;
     box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
 }
 
@@ -581,45 +588,47 @@ footer a {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 
-    .body {
+    .body{
         margin: 0;
     }
 
     /*********** nav ********/
 
     /*********** header *********/
-    .header-filter {
-        display: flex;
+
+    .header-filter{
+        display:flex;
         flex-direction: column;
         align-items: flex-start;
     }
+
     /*******media-hebergement-populaire******/
 
 
     /******* media-hebergement*****/
 
-    #hebergements-populaires {
+    #hebergements-populaires{
         flex-direction: column;
         gap: 50px;
 
     }
 
-    .hebergements-a-marseille {
+    .hebergements-a-marseille{
         width: 100%;
     }
 
-    .populaires {
+    .populaires{
         width: 100%;
    
     }
 
-    .populaire-container-card {
+    .populaire-container-card{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .populaire-container-card a {
+    .populaire-container-card a{
         width: 30%;
     }
 
@@ -627,15 +636,18 @@ footer a {
         height: 146px;
     }
 
-    .card-populaire .card-title {
+    .card-populaire .card-title{
         font-size: 14px;
     }
 
-    .card-populaire.card-subtitle {
+    .card-populaire.card-subtitle{
         font-size: 13px;
     }
 
     /******activité******/
+    .container-card-activité-marseille{
+       align-items: stretch;
+    }
     .card-activité-marseille img{
         height: 200px;
     }
