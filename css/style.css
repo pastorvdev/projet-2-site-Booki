@@ -598,7 +598,7 @@ footer a {
 
     /******* media-hebergement*****/
 
-    .hebergements-populaires {
+    #hebergements-populaires {
         flex-direction: column;
         gap: 50px;
 
