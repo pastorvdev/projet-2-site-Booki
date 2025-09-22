@@ -7,6 +7,7 @@
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
     --filter-bg-color: #DEEBFF;
+    --grey-bg-color: #d9d9d9;
 }
 
 .fa-solid {
@@ -105,9 +106,7 @@ fieldset{
  border-radius: 15px;
  padding: 0px;
  max-width: 377px;
- width: 100%;
- max-height: 49px;
- height: 100%;
+ margin: 0px;
  background-color: var(--main-bg-color);
 }
 
@@ -116,8 +115,11 @@ input#logo-geo{
     border: none;
     padding: 14px 16px;
     font-size: 16px;
-
+    width: 100%;
 }
+
+
+
 label .fa-solid{
     color: black;
 }
@@ -128,30 +130,32 @@ input::placeholder{
     color: black;
 }
 
-input[type="submit"]{
+button{
     font-size: 18px;
     font-weight: 700;
-    width: 100%;
-    height: 100%;
     padding: 15px 16px;
     background-color: #007bff; 
     color: white;
     border: 1 solid var(--main-color);
     border-radius: 0px 15px 15px 0px;
 }
-
+  button .text {
+    display: inline;
+  }
+  button .fa-solid {
+    display: none;
+  }
 label{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0px 16px;
     width: 50px;
-    height: 49px;
     font-size: 18px;
+    box-sizing: border-box;
     color: var(--main-color);
 }
 
-.header-search button {
+/**** .header-search button {
   font-size: 16px;
   line-height: 100%;
   width: 100%;
@@ -161,8 +165,8 @@ label{
   color: white;
   border: 1 solid var(--main-color);
   border-radius: 0px 15px 15px 0px;
-  /*cursor:pointer;*/
-}
+  } ****/
+
   /*********header-filter********/
 
   .header-filter{
@@ -244,6 +248,10 @@ label{
     border-radius: 50px 50px;
 }
 
+p {
+   font: 16px;
+}
+
 /*********main*********/
 
 .main{
@@ -291,7 +299,6 @@ label{
 
 #hebergements-populaires section {
 
-    background-color: var(--main-bg-color);
     border-radius: 15px;
     padding: 30px;
     gap: 30px;
@@ -304,6 +311,7 @@ label{
   width: 67%;
   display: flex;
   flex-direction: column;
+  background-color: var(--grey-bg-color);
   margin: 0;
   
 }
@@ -427,6 +435,7 @@ gap: 4px;
     border-radius: 15px;
     padding:30px;
     gap: 30px;
+    background-color: var(--grey-bg-color);
 }
 
 .populaires-title {
@@ -442,7 +451,6 @@ gap: 4px;
 .card-populaire .card-content{
     width: 100%;
     background-color: white;
-    
     padding: 10px 5px 5px 15px;
     }
 
@@ -656,7 +664,7 @@ footer a {
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
+@media (min-width:375px) and (max-width: 767.98px) {
     /*......nav....... */
     nav{
         display: flex;
@@ -694,11 +702,180 @@ footer a {
         padding: 7px 0px 7px 0px;
         border-bottom: 2px solid transparent;
         width: 100%;
-}
+    }
 
     #menu-bar a:hover{
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         border-top:2px solid transparent;
     }
+    /********header**********/
+    header{
+        margin-top: 35px;
+        padding: 0px 20px;
+    }
+
+    /******formulaire***********/
+
+    button{
+        width: 49px;
+        height:49px;
+        padding: 15px 16px;
+        border-radius:20px;
+        border: 1px solid var(--main-color);  
+    }
+    button:hover{
+        box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
+    }
+
+    button .button-text {
+        display: none;
+    }
+
+    button .fa-solid {
+        display: inline;
+        color: white;
+    }
+    /******header-filter********/
+
+    .header-main-container-filter{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width:100%
+    }
+
+    .header-first-container-filter, .header-second-container-filter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    }   
+
+    .filter-button{
+        width: 140px;
+    }
+
+    .filter-button h4{
+        font-size: 14px;
+    }
+/****** header-disclaimer******/
+
+p {
+    width:301px;
+}
+
+/****** main **********/
+
+#hebergements-populaires{
+    flex-direction: column-reverse;
+    gap: 15px;
+    padding: 0px;
+    margin-top:35px;
+}
+
+#hebergements-populaires section{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 30px 20px;
+    gap: 30px;
+    border-radius: 0px;
+}
+
+.populaire-container-card{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.card-populaire {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+.populaire-container-card a {
+    width: 100%;
+  }
+
+.card-populaire img {
+    display: block;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    width:33%;
+    height:146px;
+}
+
+.card-populaire .card-content{
+    width: 67%;
+    height: 146px;
+}
+/******* hergement-a-marseille *********/
+
+.hebergements-a-marseille {
+ background-color: var(--main-bg-color);
+}
+
+.first-container-hebergement-card, .second-container-hebergement-card {
+    flex-direction: column;
+    width: 100%;
+    gap: 15px;
+}
+  .card-marseille {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+    .card-marseille img {
+        width: 100%;
+        height: 124px;
+}
+.card-marseille .card-content {
+    padding: 0px 15px 0px 15px;
+    gap: 8px;
+    margin: 0;
+}
+
+/****** activité a marseille ****/
+#activité-a-marseille-container{
+    padding: 0px;
+    gap: 15px;
+}
+
+.container-card-activité-marseille{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+   
+}
+.card-activité-marseille img{
+    width: 100%;
+}
+
+/****** footer ******/
+
+footer{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+    margin: 0px;
+    padding: 30px;
+
+}
+
+.menu-footer{
+    width: 100%;
+    padding: 0px;
+
+
+}
+
+.menu-footer li{
+    margin-top:0px;
+}
+
 }
