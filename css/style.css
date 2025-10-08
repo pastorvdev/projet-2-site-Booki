@@ -196,7 +196,7 @@ button{
     display: flex;
     align-items: center;
     gap:10px;
-    padding: 4px 19px;
+    padding: 0px 19px;
     border-radius: 50px;
     border: 2px solid var(--main-bg-color);
     font-size: 22px;
