@@ -193,7 +193,7 @@ label {
   gap: 15px;
 }
 
-.header-main-container-filter h3{
+.header-main-container-filter p{
   margin: 0;
   color: black;
   font-size: 17px;
@@ -451,7 +451,7 @@ main {
   border-radius: 15px 15px 0px 0px;
 }
 
-.card-activité-marseille h3 {
+.card-activité-marseille p {
   font-size: 16px;
   padding: 20px 19px 20px 19px;
 }
@@ -508,6 +508,10 @@ footer a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .header-filter p{
+    font-size: 16px;
   }
 
   /*******hebergement-populaire******/
@@ -647,6 +651,8 @@ label{
   .header-main-container-filter {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    gap:20px;
   }
 
   .header-first-container-filter,
@@ -656,13 +662,16 @@ label{
     gap:10px
   }
 
-  .filter-button {
-    width: 122px;
+  .filter-button p{
+    font-size: 0.6em;
   }
 
-  .filter-button h3 {
-    font-size: 14px;
+  .filter-button {
+    max-width: 40%;
+    min-width:34%;
   }
+
+
   /****** header-disclaimer******/
 
   .header-disclaimer p {
