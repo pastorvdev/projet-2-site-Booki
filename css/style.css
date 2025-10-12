@@ -33,7 +33,12 @@ a {
 .filter-button:hover {
   cursor: pointer;
 }
-
+i.fa-solid.fa-money-bill-wave, i.fa-solid.fa-person, i.fa-solid.fa-heart, i.fa-solid.fa-fire {
+font-size: 22px;
+}
+i.fa-solid.fa-chart-line {
+  font-size: 16px;
+}
 .fa-solid {
   color: var(--main-color);
 }
