@@ -116,21 +116,24 @@ p {
 fieldset {
   display: flex;
   align-items: center;
+  height:49px;
   font-family: sans-serif;
   border: none;
   border-radius: 15px;
   padding: 0px;
-  max-width: 377px;
+  width: 377px;
   margin: 0px;
-  background-color: var(--main-bg-color);
 }
 
 input#logo-geo {
   font-size: 18px;
   border: none;
   padding: 14px 16px;
-  font-size: 18px;
-  width: 100%;
+  width: 195px;
+  border-bottom: 1px solid var(--main-bg-color);
+  border-top: 1px solid var(--main-bg-color);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 label .fa-solid {
@@ -147,6 +150,7 @@ input::placeholder {
 button {
   font-size: 18px;
   font-weight: 700;
+  height: 49px;
   padding: 15px 16px;
   background-color: #007bff;
   color: white;
@@ -171,10 +175,13 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 30%;
+  width: 50px;
   font-size: 18px;
   box-sizing: border-box;
   color: var(--main-color);
+  background-color: var(--main-bg-color);
+  border-radius: 15px 0px 0px 15px;
+  height: 100%;
 }
 
 /*********header-filter********/
@@ -211,7 +218,7 @@ label {
   gap: 10px;
   padding: 0px 19px;
   border-radius: 50px;
-  border: 2px solid var(--main-bg-color);
+  border: 2px solid var(--grey-bg-color);
   color: var(--main-color);
   white-space: nowrap;
 }
@@ -272,7 +279,7 @@ main {
   border-radius: 15px;
   padding: 30px;
   gap: 30px;
-  background-color: var(--grey-bg-color);
+  background-color: var(--main-bg-color);
 }
 
 /******Hébergement-title*****/
@@ -375,7 +382,7 @@ main {
   padding: 30px;
   box-sizing: border-box;
   border-radius: 15px;
-  background-color: var(--grey-bg-color);
+  background-color: var(--main-bg-color));
 }
 
 .populaires-title {
@@ -538,6 +545,7 @@ footer a {
   /**********populaire**********/
 
   .populaires {
+    background-color: var(--main-bg-color);
     width: 100%;
   }
 
@@ -627,11 +635,18 @@ footer a {
     width: 100%;
   }
 
+input#logo-geo {
+  width: 302px;
+}
+
+
   label{
-  width:25%;
+  width:50px;
   }
 
   button {
+    position: relative;
+    right: 23px;
     width: 49px;
     height: 49px;
     padding: 15px 16px;
