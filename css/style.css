@@ -712,7 +712,7 @@ input#logo-geo {
   main {
     padding: 0px;
     margin-top: 0px;
-    gap: 0px;
+    gap: 15px;
   }
 
   /****** hebergement-populaire *****/
@@ -731,7 +731,7 @@ input#logo-geo {
   }
 
   /*******populaire*********/
-  
+
   .populaires{
     gap:15px;
   }
