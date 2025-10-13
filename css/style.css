@@ -113,31 +113,50 @@ p {
 }
 /**********formulaire***********/
 
+.header-formulaire, form{
+  max-width: 377px;
+}
+
+
 fieldset {
   display: flex;
   align-items: center;
-  height:49px;
+  max-width: 375px;
+  height: 47px;
   font-family: sans-serif;
-  border: none;
+  border: 1px solid var(--main-bg-color);
   border-radius: 15px;
   padding: 0px;
-  width: 377px;
   margin: 0px;
 }
 
-input#logo-geo {
+label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
   font-size: 18px;
-  border: none;
-  padding: 14px 16px;
-  width: 195px;
-  border-bottom: 1px solid var(--main-bg-color);
-  border-top: 1px solid var(--main-bg-color);
-  height: 100%;
   box-sizing: border-box;
+  color: var(--main-color);
+  background-color: var(--main-bg-color);
+  border-radius: 15px 0px 0px 15px;
+  height: 100%;
 }
 
 label .fa-solid {
   color: black;
+}
+
+input#logo-geo {
+  flex: 1;
+  border: none;
+  padding: 14px 16px;
+  margin: 0px;
+  max-width: 193px;
+  border-bottom: 1px solid var(--main-bg-color);
+  border-top: 1px solid var(--main-bg-color);
+  height: 100%;
+  box-sizing: border-box;
 }
 
 input::placeholder {
@@ -148,9 +167,12 @@ input::placeholder {
 }
 
 button {
+  display: flex;
+  align-items: center;
+  width: 132px;
   font-size: 18px;
   font-weight: 700;
-  height: 49px;
+  height: 47px;
   padding: 15px 16px;
   background-color: #007bff;
   color: white;
@@ -169,19 +191,6 @@ button .text {
 
 button .fa-solid {
   display: none;
-}
-
-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50px;
-  font-size: 18px;
-  box-sizing: border-box;
-  color: var(--main-color);
-  background-color: var(--main-bg-color);
-  border-radius: 15px 0px 0px 15px;
-  height: 100%;
 }
 
 /*********header-filter********/
@@ -382,7 +391,7 @@ main {
   padding: 30px;
   box-sizing: border-box;
   border-radius: 15px;
-  background-color: var(--main-bg-color));
+  background-color: var(--main-bg-color);
 }
 
 .populaires-title {
@@ -627,27 +636,27 @@ footer a {
   }
 
   /******formulaire***********/
-  fieldset {
-    max-width: 335px;
-  }
-
-  fieldset + input {
+ 
+/*fieldset + input {
     width: 100%;
   }
 
 input#logo-geo {
   width: 302px;
 }
+*/
 
+input#logo-geo {
+  width: 100%;
+  max-width: 277px !important;
+}
 
   label{
   width:50px;
   }
 
   button {
-    position: relative;
-    right: 23px;
-    width: 49px;
+    width: 49px !important;
     height: 49px;
     padding: 15px 16px;
     border-radius: 20px;
@@ -717,13 +726,14 @@ input#logo-geo {
   #hebergements-populaires section {
     display: flex;
     flex-direction: column;
-    padding: 30px 20px 30px 20px;
-
+    padding: 20px;
     border-radius: 0px;
   }
 
   /*******populaire*********/
-
+  .populaires{
+    gap:15px;
+  }
   .populaire-container-card {
     display: flex;
     flex-direction: column;
@@ -736,6 +746,7 @@ input#logo-geo {
     align-items: center;
     box-sizing: border-box;
     width: 100%;
+    margin-top: 0px;
   }
   .populaire-container-card a {
     width: 100%;
@@ -758,6 +769,8 @@ input#logo-geo {
 
   .hebergements-a-marseille {
     background-color: white;
+    gap:15px;
+    padding: 20px;
   }
 
   .first-container-hebergement-card,
